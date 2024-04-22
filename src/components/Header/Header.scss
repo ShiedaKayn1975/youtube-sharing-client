@@ -1,0 +1,29 @@
+.header-container {
+  border-bottom: var(--border-style);
+  padding-bottom: 1.5rem;
+  .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    a.no-style {
+      &:hover,
+      &:focus,
+      &:visited {
+        color: var(--font-color);
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-container {
+    height: 66px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      margin-top: 0rem;
+    }
+  }
+}

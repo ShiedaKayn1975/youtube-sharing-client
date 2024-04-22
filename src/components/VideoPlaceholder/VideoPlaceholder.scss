@@ -1,0 +1,36 @@
+.placeholder-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  .video-placeholder {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .btn-play-bg,
+  .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-play-bg {
+    opacity: 0.6;
+    color: var(--primary-color-hover);
+    -webkit-transition: var(--transition-style);
+    -moz-transition: var(--transition-style);
+    transition: var(--transition-style);
+  }
+}
+.placeholder-container:hover {
+  cursor: pointer;
+  .btn-play-bg {
+    opacity: 1;
+    filter: invert(14%) sepia(87%) saturate(7455%) hue-rotate(3deg)
+      brightness(93%) contrast(122%);
+  }
+}

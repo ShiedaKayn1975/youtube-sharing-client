@@ -1,0 +1,58 @@
+.sharebox-container {
+  margin-top: 1.5rem;
+  .sharebox-form {
+    border: var(--border-style);
+    border-radius: 0.3rem;
+    padding: 3.5rem 1.5rem;
+    width: calc(100% - 3rem);
+    margin: 14rem auto;
+    .sharebox-title {
+      position: absolute;
+      margin-top: -5rem;
+      background-color: #ffffff;
+    }
+    .sharebox-url,
+    .sharebox-submit {
+      width: 100%;
+    }
+    .sharebox-url {
+      display: flex;
+      flex-direction: column;
+    }
+    .sharebox-submit {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .sharebox-container {
+    .sharebox-form {
+      width: calc(600px - 3rem);
+      .sharebox-url {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        label {
+          width: 150px;
+        }
+        input {
+          width: calc(100% - 150px);
+          margin-bottom: 0;
+        }
+      }
+      .sharebox-submit {
+        display: flex;
+        justify-content: flex-end;
+        input {
+          width: calc(100% - 150px);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
